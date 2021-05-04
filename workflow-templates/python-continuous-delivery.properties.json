@@ -1,0 +1,11 @@
+{
+    "name": "Python build & publish",
+    "description": "Build and publish a Python package to PyPI.",
+    "iconName": "python",
+    "categories": [
+        "Python"
+    ],
+    "filePatterns": [
+        "^setup.py$"
+    ]
+}
