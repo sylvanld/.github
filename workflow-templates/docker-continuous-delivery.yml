@@ -50,6 +50,6 @@ jobs:
       # build and publish image for multiple architectures
       - name: Build and publish
         if: success()
-        run: docker buildx build --platform linux/amd64,linux/arm64 --output type=image,push=true -t ${{env.DOCKER_REGISTRY_URL}}/${{env.DOCKER_ORG_NAME}}/${{ matrix.image-name }}:${{ env.RELEASE_TAG }} ${{matrix.build-context}}
+        run: docker buildx build --platform linux/amd64,linux/arm64 --output type=image,push=true -t ${{env.DOCKER_REGISTRY_URL}}/${{env.DOCKER_ORG_NAME}}/${{ matrix.image-name }}:${{ env.RELEASE_TAG }} -t ${{env.DOCKER_REGISTRY_URL}}/${{env.DOCKER_ORG_NAME}}/${{ matrix.image-name }}:latest ${{matrix.build-context}}
         
        
