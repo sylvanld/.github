@@ -9,6 +9,7 @@ on:
 
 env:
   DOCKER_REGISTRY_URL: docker.io
+  DOCKER_ORG_NAME: sylvanld
   RELEASE_TAG: ${GITHUB_REF/refs\/tags\//}
 
 # Jobs triggered on workflow run.
@@ -49,6 +50,6 @@ jobs:
       # build and publish image for multiple architectures
       - name: Build and publish
         if: success()
-        run: docker buildx build --platform linux/amd64,linux/arm64 --output type=image,push=true -t ${{env.DOCKER_REGISTRY_URL}}/${{ matrix.image-name }}:${{ env.RELEASE_TAG }} ${{matrix.build-context}}
+        run: docker buildx build --platform linux/amd64,linux/arm64 --output type=image,push=true -t ${{env.DOCKER_REGISTRY_URL}}/${{env.DOCKER_ORG_NAME}}/${{ matrix.image-name }}:${{ env.RELEASE_TAG }} ${{matrix.build-context}}
         
        
