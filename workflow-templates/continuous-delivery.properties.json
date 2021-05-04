@@ -1,6 +1,6 @@
 {
-    "name": "SylvanLD docker continuous delivery",
-    "description": "Workflow to build one or multiple images for both AMD64 & ARM64 architectures.",
+    "name": "Docker continuous delivery",
+    "description": "Build and publish all docker images from a repository, for both AMD64 & ARM64 architectures.",
     "iconName": "docker",
     "categories": [
         "Docker"
