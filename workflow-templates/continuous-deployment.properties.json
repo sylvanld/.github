@@ -1,5 +1,5 @@
 {
-    "name": "Deploy to K3S",
+    "name": "Deploy to Kubernetes",
     "description": "Automatically publish new releases to self-hosted K3S cluster.",
     "iconName": "kubernetes",
     "categories": [
