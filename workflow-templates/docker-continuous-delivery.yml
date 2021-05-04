@@ -13,7 +13,7 @@ env:
 
 # Jobs triggered on workflow run.
 jobs:
-  build/release-docker:
+  build-and-release-docker:
     runs-on: ubuntu-latest
     
     # this job will be played against each tuple of this matrix
