@@ -1,5 +1,5 @@
 {
-    "name": "Docker continuous delivery",
+    "name": "Docker build & publish",
     "description": "Build and publish all docker images from a repository, for both AMD64 & ARM64 architectures.",
     "iconName": "docker",
     "categories": [
