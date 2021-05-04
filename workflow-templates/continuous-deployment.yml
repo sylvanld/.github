@@ -1,0 +1,12 @@
+{
+    "name": "Deploy to K3S",
+    "description": "Automatically publish new releases to self-hosted K3S cluster.",
+    "iconName": "kubernetes",
+    "categories": [
+        "Kubernetes",
+        "Deployment"
+    ],
+    "filePatterns": [
+        "^Dockerfile"
+    ]
+}
