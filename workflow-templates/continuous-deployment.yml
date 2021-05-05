@@ -7,7 +7,7 @@ on:
   # Automatically deploy latest delivered version after Continuous Delivery workflow passed
   workflow_run:
     workflows:
-      - Continuous Delivery
+      - Docker Continuous Delivery
     types: 
       - completed
 
