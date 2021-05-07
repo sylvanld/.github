@@ -1,0 +1,14 @@
+{
+    "name": "Build and deploy to Kubernetes",
+    "description": "Build docker images in the project, and deploy services to Kubernetes.",
+    "iconName": "kubernetes",
+    "categories": [
+        "Docker",
+        "Build",
+        "Kubernetes",
+        "Deployment"
+    ],
+    "filePatterns": [
+        "^Dockerfile"
+    ]
+}
