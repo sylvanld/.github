@@ -10,7 +10,7 @@ on:
 
 # Jobs triggered on workflow run.
 jobs:
-  build/release-docker:
+  release-package:
     runs-on: ubuntu-latest
 
     steps:
